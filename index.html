@@ -5,17 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script defer src="app.js"></script>
         <link rel="stylesheet" href="styles.css">
+        <div class="jokes-">
         <title>Jokes app</title>
-        <div id='title'>
-            <h1>Jokes App</h1>
-        </div>
+  
     </head>
     <body>
         <div id='info' class="hide">
-            <button id="buttonDisplay">Display random joke</button>
-            <h3 id="setup"></h3>
-            <button class="hidden" id="showPunchlineBtn">Show punchline</button>
-            <h3 class="hidden" id="punchline"></h3>
-        </div>
+            <div class="jokes-main-container">
+                <section class='title-section'>
+                    <h1 class="jokes-title">Ok, tell me a seriously funny joke</h1>
+                    <div class="btn-display-container">
+                        <button id="buttonDisplay" class="button-display">Display Random Joke</button>
+                    </div>
+                </section>
+                <div class="joke-container">
+                    <div>
+                        <h4 id="setup"></h3>
+                    </div>
+                    <div class="flip-card hidden" id="punchlineCard">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <h3>Hover to show Punchline</h3>
+                          </div>
+                          <div class="flip-card-back">
+                            <h1 class="" id="punchline"></h1>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    </div>
+    </div>
     </body>
 </html>

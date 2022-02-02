@@ -8,7 +8,7 @@ You have to download Live Server extension from Visual Studio Code or similar ex
 
 # Run Live Server
 
-You have to right click on index.html file and select Open with Live Server. A navigator will open with the DOM of the Jokes App.
+You have to right click on index.html file and select Open with Live Server. A navigator will open with the DOM of the Jokes App. Please, be sure backend is connected.
 
 # Enjoy
 

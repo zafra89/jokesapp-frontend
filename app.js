@@ -1,8 +1,8 @@
 // DOM ELEMENTS
-const buttonDisplay = document.getElementById("buttonDisplay");
-const showPunchlineBtn = document.getElementById("showPunchlineBtn");
-const setup = document.getElementById("setup");
-const punchline = document.getElementById("punchline");
+const buttonDisplay = document.getElementById('buttonDisplay');
+const punchlineCard = document.getElementById('punchlineCard');
+const setup = document.getElementById('setup');
+const punchline = document.getElementById('punchline');
 
 // VARIABLES
 let apiData;
@@ -13,14 +13,10 @@ buttonDisplay.addEventListener('click', () => {
     getData();
 });
 
-showPunchlineBtn.addEventListener('click', () => {
-    showPunchline();
-});
-
 // FUNCTIONS
 function getData() {
     fetch(`http://localhost:5000/jokes`, {
-        "method": "GET"
+        'method': 'GET'
     })
     .then(res => res.json())
     .then((data, error) => {
@@ -39,14 +35,10 @@ function showRandomJoke(id) {
         apiData.forEach(joke => {
             if (joke.id === id.toString()) {
                 setup.innerText = joke.setup;
-                punchline.classList.add('hidden');
                 punchline.innerText = joke.punchline;
-                showPunchlineBtn.classList.remove('hidden');
+                punchlineCard.classList.remove('hidden');
             }
         });
     }
 }
 
-function showPunchline() {
- punchline.classList.remove('hidden');   
-}
