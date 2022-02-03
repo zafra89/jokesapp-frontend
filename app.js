@@ -28,6 +28,9 @@ function getData() {
         }
         else console.log(error);
     })
+    .catch((error) => {
+        console.log(error);
+    })
 }
 
 function showRandomJoke(id) {
@@ -41,4 +44,3 @@ function showRandomJoke(id) {
         });
     }
 }
-

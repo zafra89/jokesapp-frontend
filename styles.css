@@ -22,11 +22,13 @@
     margin: 0;
     padding: 0;
   }
+
   body {
     margin: 0;
     padding: 0;
     background-color: yellow;
   }
+
   .jokes-title {
     font-family: "metro-bold";
     font-size: 4.5rem;
@@ -38,6 +40,7 @@
     top: -3rem;
     padding-left: 1rem;
   }
+
   .button-display {
     color: white;
     background: var(--intense-blue);
@@ -51,29 +54,31 @@
     cursor: pointer;
     box-shadow: inset 0 0 0 0 var(--intense-blue);
   }
+
   .button-display:hover {
     background-color: black;
     color: var(--intense-blue);
   }
+
   .hidden {
     display: none;
   }
+
   .jokes-main-container {
     position: relative;
   }
+
   .btn-display-container {
-    position: fixed;
-    left: 40%;
-    top: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 8rem;
   }
+
   .joke-section {
     display: flex;
     flex-direction: column;
-  }
-  
-  #setup,
-  #punchline {
-    font-size: 2rem;
   }
 
   .joke-container {
@@ -98,7 +103,7 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 1s;
     transform-style: preserve-3d;
   }
   
@@ -111,12 +116,16 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  }
+
+  .flip-card-front, #punchline, .setup-div {
+    font-size: 2.5rem;
   }
   
   .flip-card-front {
@@ -126,7 +135,7 @@
   }
   
   .flip-card-back {
-    background-color: #56F73F;
+    background-color: #27f10c;
     color: black;
     transform: rotateY(180deg);
     border-radius: 10px;
